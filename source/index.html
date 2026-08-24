@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
@@ -11,8 +11,8 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="#" width="174" height="50" alt="Логотип Cat Energy">
+    <a class="main-header__logo logo" href="index.html">
+      <img class="logo__image" src="#" width="174" height="50" alt="Логотип Cat Energy">
     </a>
     <nav class="main-header__nav nav">
       <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -48,33 +48,37 @@
         подобрать программу
       </a>
     </section>
-    <section class="program-slim">
-      <h2 class="program-slim__title">
-        похудение
-      </h2>
-      <p class="program-slim__text">
-        Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-      </p>
-      <a class="program-slim__link" href="#">
-        каталог slim
-      </a>
-    </section>
-    <section class="program-pro">
-      <h2 class="program-pro__title">
-        набор массы
-      </h2>
-      <p class="program-pro__text">
-        Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-      </p>
-      <a class="program-pro__link" href="#">
-        каталог pro
-      </a>
+    <section class="programs">
+      <ul class="programs__list">
+        <li class="programs__item">
+          <h2 class="programs__title">
+            похудение
+          </h2>
+          <p class="programs__text">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="programs__link" href="#">
+            каталог slim
+          </a>
+        </li>
+        <li class="programs__item">
+          <h2 class="programs__title">
+            набор массы
+          </h2>
+          <p class="programs__text">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a class="programs__link" href="#">
+            каталог pro
+          </a>
+        </li>
+      </ul>
     </section>
     <section class="advantages">
       <h2 class="advantages__title">
         Как это работает
       </h2>
-      <ul class="advantages__list">
+      <ol class="advantages__list">
         <li class="advantages__item">
           <p class="advantages__text">
             Функциональное питание <br>содержит только полезные <br>питательные вещества.
@@ -95,7 +99,7 @@
             Уже через месяц наслаждайтесь <br>изменениями к лучшему <br>вашего питомца!
           </p>
         </li>
-      </ul>
+      </ol>
     </section>
     <section class="example">
       <h2 class="example__title">
@@ -118,9 +122,11 @@
           затрачено времени
         </dd>
       </dl>
-      <h3 class="example__expenses">
+      <p class="example__expenses">
         Затраты на питание: 15 000 РУБ.
-      </h3>
+      </p>
+      <img class="example__slider example__slider--image" width="560" height="512" src="#" alt="Кот до снижения веса">
+      <img class="example__slider example__slider--image" width="560" height="512" src="#" alt="Кот после снижения веса">
     </section>
     <section class="contacts">
       <h2 class="contacts__title">
@@ -134,30 +140,26 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__logo">
-      <a class="main-footer__logo" href="index.html">
-        <img class="main-footer__logo-image" src="index.html" width="128" height="24" alt="Логотип Cat Energy">
-      </a>
-    </div>
-    <div class="main-footer__socials">
-      <ul class="main-footer__list">
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="https://vk.ru/htmlacademy">
-            <span class="visually-hidden">Группа Вконтакте</span>
-          </a>
-        </li>
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="https://www.youtube.com/@HTMLAcademyTV">
-            <span class="visually-hidden">Ютуб канал</span>
-          </a>
-        </li>
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="https://htmlacademy.t.me/">
-            <span class="visually-hidden">Канал в Телеграм</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <a class="main-footer__logo" href="index.html">
+      <img class="main-footer__logo-image" src="index.html" width="128" height="24" alt="Логотип Cat Energy">
+    </a>
+    <ul class="main-footer__list socials">
+      <li class="socials__item">
+        <a class="socials__link" href="https://vk.ru/htmlacademy">
+          <span class="visually-hidden">Группа Вконтакте</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://www.youtube.com/@HTMLAcademyTV">
+          <span class="visually-hidden">Ютуб канал</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://htmlacademy.t.me/">
+          <span class="visually-hidden">Канал в Телеграм</span>
+        </a>
+      </li>
+    </ul>
     <div class="main-footer__copyright copyright">
       <p class="copyright__text">HTML Academy</p>
     </div>
