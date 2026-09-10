@@ -1,7 +1,12 @@
+.card__link {
+  text-decoration: none;
+}
+
 .card__title {
   font-size: 16px;
   line-height: 20px;
-  color: $special_dark-grey-2;
+  font-weight: 400;
+  color: $color-secondary;
   text-transform: uppercase;
 }
 
@@ -9,17 +14,21 @@
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: $special_dark-grey;
+  color: $color-muted;
 }
 
 .card__info-item {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: $special_dark-grey;
+  color: $color-muted;
+}
+
+.card__title--more {
+  color: $color-main;
 }
 
 .button--grey {
   background-color: #f2f2f2;
-  color: $special_dark-grey;
+  color: $color-muted;
 }
