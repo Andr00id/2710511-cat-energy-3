@@ -1,5 +1,14 @@
+.copyright::after {
+  content: "";
+  display: block;
+  background-color: #333333;
+  width: 28px;
+  height: 22px;
+  mask-image: url("../../icons/stack.svg#html-logo");
+}
+
 .copyright__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $color-muted;

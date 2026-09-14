@@ -9,8 +9,48 @@
 }
 
 .advantages__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  position: relative;
   color: $color-muted;
+  padding-left: 80px;
+}
+
+.advantages__text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  background-color: $color-basic-green;
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__text--icon-leaf::before {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__text--icon-powder::before {
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__text--icon-cutlery::before {
+  background-image: url("../../icons/stack.svg#icon-cutlery");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__text--icon-alarm::before {
+  background-image: url("../../icons/stack.svg#icon-alarm");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
