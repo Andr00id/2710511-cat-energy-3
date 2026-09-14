@@ -11,6 +11,25 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 29px;
+}
+
+.programs__title--slim {
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 36px auto;
+  padding-left: 90px;
+}
+
+.programs__title--pro {
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 67px auto;
+  padding-left: 107px;
 }
 
 .programs__text {

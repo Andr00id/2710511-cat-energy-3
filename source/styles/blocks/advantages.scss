@@ -14,3 +14,35 @@
   line-height: 18px;
   color: $color-muted;
 }
+
+.advantages__text--icon-leaf {
+  background-image: url("../../icons/stack.svg#icon-leaf"), linear-gradient($color-basic-green, $color-basic-green);
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  background-position: 15px center;
+  padding-left: 95px;
+}
+
+.advantages__text--icon-powder {
+  background-image: url("../../icons/stack.svg#icon-powder"), linear-gradient($color-basic-green, $color-basic-green);
+  background-repeat: no-repeat;
+  background-size: 26px 29px;
+  background-position: 15px center;
+  padding-left: 95px;
+}
+
+.advantages__text--icon-cutlery {
+  background-image: url("../../icons/stack.svg#icon-cutlery"), linear-gradient($color-basic-green, $color-basic-green);
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  background-position: 15px center;
+  padding-left: 95px;
+}
+
+.advantages__text--icon-alarm {
+  background-image: url("../../icons/stack.svg#icon-alarm"), linear-gradient($color-basic-green, $color-basic-green);
+  background-repeat: no-repeat;
+  background-size: 27px 31px;
+  background-position: 15px center;
+  padding-left: 95px;
+}
