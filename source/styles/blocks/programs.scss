@@ -3,7 +3,49 @@
 }
 
 .programs__item {
+  position: relative;
   background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $color-basic-green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 24px;
+    left: 20px;
+  }
+}
+
+.programs__item--slim::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px auto;
+  top: 21px;
+  left: 27px;
+  width: 36px;
+  height: 50px;
+}
+
+.programs__item--pro::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 67px auto;
+  top: 35px;
+  left: 12px;
+  width: 67px;
+  height: 28px;
 }
 
 .programs__title {
@@ -12,28 +54,12 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 29px;
+  margin-left: 70px;
 }
 
-.programs__title--slim {
-  background-image: url("../../icons/stack.svg#cat-slim");
-  background-repeat: no-repeat;
-  background-position: 20px center;
-  background-size: 36px auto;
-  padding-left: 90px;
-}
-
-.programs__title--pro {
-  background-image: url("../../icons/stack.svg#cat-pro");
-  background-repeat: no-repeat;
-  background-position: 20px center;
-  background-size: 67px auto;
-  padding-left: 107px;
-}
 
 .programs__text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $color-muted;
