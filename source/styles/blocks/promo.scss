@@ -2,6 +2,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  margin-left: 20px;
 }
 
 .promo__description {
@@ -9,4 +10,19 @@
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__title {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__title {
+    margin-left: 110px;
+  }
 }

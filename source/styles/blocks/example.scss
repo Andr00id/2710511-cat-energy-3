@@ -6,6 +6,8 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0;
+  margin-left: 20px;
 }
 
 .example__text {
@@ -13,6 +15,15 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-muted;
+  margin-left: 20px;
+}
+
+.example__list {
+  display: flex;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .example__term {
@@ -31,4 +42,34 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example__title {
+    margin-left: 30px;
+  }
+
+
+  .example__text {
+    margin-left: 30px;
+  }
+
+  .example__list {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__title {
+    margin-left: 110px;
+  }
+
+
+  .example__text {
+    margin-left: 110px;
+  }
+
+  .example__list {
+    margin-left: 110px;
+  }
 }
