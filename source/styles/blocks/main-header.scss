@@ -1,1 +1,19 @@
 //возможно тут что то будет
+
+.main-header {
+  display: flex;
+  min-height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.main-header__container {
+  width: 280px;
+}

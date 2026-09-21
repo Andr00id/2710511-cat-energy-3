@@ -1,3 +1,21 @@
+.catalog__title {
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    margin-left: 110px;
+  }
+}
+
 .catalog__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

@@ -3,8 +3,36 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .intro {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    display: flex;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  .intro__container--text {
+    flex-direction: row;
+  }
+}
+
+
 .intro__title {
+  margin: 0;
+  padding: 0;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
 }
 
 .intro__text {
@@ -12,4 +40,12 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
 }
