@@ -1,9 +1,25 @@
+.extra-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 12px;
+  padding: 15px 0;
+  border-top: 1px solid #ebebeb;
+}
+
 .extra-card__item-title {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $color-secondary;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.extra-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
 }
 
 .extra-card__info-title {
@@ -18,4 +34,50 @@
   font-size: 14px;
   line-height: 14px;
   color: $color-muted;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-card {
+    grid-template-columns: 1fr 1fr auto;
+    gap: 20px 20px;
+    padding: 26px 0;
+  }
+
+  .extra-card__button {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-items {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px 80px;
+  }
+
+  .extra-items__title {
+    grid-column: 1 / -1;
+    margin: 0;
+    margin-left: 110px;
+  }
+
+  .extra-items__list {
+    margin-left: 110px;
+  }
+
+  .extra-card {
+    padding: 15px 0;
+  }
+
+  .extra-card__button {
+    grid-column: 4;
+    grid-row: 1;
+    width: 245px;
+  }
+
+  .extra-items__text {
+    margin: 0;
+    margin-right: 110px;
+  }
 }

@@ -1,4 +1,6 @@
 .programs__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -8,12 +10,15 @@
   padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
 
   &::before {
     content: "";
     position: absolute;
     display: block;
-    background-color: $color-basic-green;
+    background-color: $color-green;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -21,6 +26,11 @@
     left: 20px;
   }
 }
+
+.programs__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 
 .programs__item--slim::after {
   content: "";
@@ -69,4 +79,91 @@
   line-height: 16px;
   background-color: transparent;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__list {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 708px;
+    list-style: none;
+  }
+
+  .programs__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 372px;
+    padding: 77px 52px 57px;
+    margin: 0 0 30px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: auto;
+      right: 62px;
+    }
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 24px;
+  }
+
+  .programs__text {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+    margin: 0 0 52px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+  }
+
+  .programs__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .programs__item--slim::after {
+    left: auto;
+    right: 92px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px;
+    height: 194px;
+    background-size: contain;
+  }
+
+  .programs__item--pro::after {
+    left: auto;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 268px;
+    height: 112px;
+    background-size: contain;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    margin-left: 110px;
+  }
+
+  .programs__item {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 570px;
+    height: 374px;
+  }
+
+  .programs__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
 }
