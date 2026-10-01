@@ -1,5 +1,9 @@
 .form {
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .form__input {
@@ -7,22 +11,33 @@
   font-size: 20px;
   color: $color-muted;
   text-transform: uppercase;
-  width: 280px;
+  width: 100%;
+  height: 56px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+}
+
+.form__button {
+  height: 56px;
+  padding: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .form {
-    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    max-width: 632px;
   }
 
   .form__input {
-    flex-grow: 1;
-    max-width: 376px;
+    width: 376px;
+    border-right: none;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .form {
-    display: flex;
+  .form__button {
+    width: 256px;
+    flex-shrink: 0;
   }
 }

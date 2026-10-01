@@ -1,25 +1,118 @@
-.extra-items__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.extra-items {
+  padding: 0 20px;
 }
 
 .extra-items__title {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  margin: 0 0 35px;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: $color-green;
+  }
 }
 
+.extra-items__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 35px;
+}
+
+
 .extra-items__text {
+  margin: 0;
+  box-sizing: border-box;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  background-color: rgba(104, 183, 56, 0.85);
   color: #ffffff;
   text-align: center;
-  padding-top: 187px;
-  background-image: url("../../icons/stack.svg#icon-gift");
+  padding: 187px 40px 43px;
+  background-color: $color-main;
+  background-image:
+    url("../../icons/stack.svg#icon-gift"),
+    url("../../images/catalog-background-cat@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 59px;
-  background-size: 78px 80px;
+  background-position: center 59px, center;
+  background-size: 78px 80px, cover;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-items {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .extra-items__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+    gap: 35px;
+  }
+
+  .extra-items__list {
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+    margin-bottom: 70px;
+  }
+
+  .extra-items__text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 200px;
+    padding: 60px 125px 60px 0;
+    text-align: left;
+    background-image:
+      url("../../icons/stack.svg#icon-gift"),
+      url("../../images/catalog-background-cat@1x.jpg");
+    background-position: left 77px center, center;
+    background-size: 80px 83px, cover;
+
+    br {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-items {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 895px 245px;
+    gap: 0 80px;
+  }
+
+  .extra-items__title {
+    grid-column: 1 / -1;
+    margin-bottom: 80px;
+  }
+
+  .extra-items__list {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .extra-items__text {
+    display: block;
+    width: 245px;
+    min-height: 289px;
+    padding: 185px 40px 42px;
+    text-align: center;
+    background-image:
+      url("../../icons/stack.svg#icon-gift"),
+      url("../../images/catalog-background-cat@1x.jpg");
+    background-position: center 55px, center;
+    background-size: 80px 83px, cover;
+  }
 }
