@@ -124,10 +124,6 @@
     font-size: 20px;
   }
 
-  .programs__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
   .programs__item--slim::after {
     left: auto;
     right: 92px;
@@ -150,20 +146,66 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    max-width: 1440px;
+    margin-top: 82px;
+    padding: 0 110px;
+    box-sizing: border-box;
+  }
+
   .programs__list {
-    display: flex;
-    margin-left: 110px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   .programs__item {
     box-sizing: border-box;
+    width: 570px;
+    min-height: 374px;
+    padding: 77px 52px 60px;
     margin: 0;
-    max-width: 570px;
-    height: 374px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+      transform: none;
+    }
   }
 
-  .programs__item:not(:last-child) {
-    margin-bottom: 0;
-    margin-right: 80px;
+  .programs__title {
+    margin: 0 0 40px 162px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programs__text {
+    max-width: 460px;
+    margin-top: 73px;
+    margin-bottom: 23px;
+  }
+
+  .programs__item--slim::after {
+    width: 70px;
+    height: 97px;
+    top: 40px;
+    left: 67px;
+    right: auto;
+    transform: none;
+  }
+
+  .programs__item--pro::after {
+    width: 134px;
+    height: 56px;
+    top: 70px;
+    left: 35px;
+    right: auto;
+    transform: none;
   }
 }
