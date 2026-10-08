@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-top: 22px;
   text-decoration: none;
   cursor: pointer;
 
@@ -27,6 +28,7 @@
 @media (min-width: $tablet-width) {
   .copyright {
     width: auto;
+    padding-top: 0;
     gap: 22px;
   }
 }

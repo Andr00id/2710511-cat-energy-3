@@ -1,16 +1,25 @@
 .catalog {
-  padding-bottom: 35px;
+  width: 100%;
+}
+
+.catalog__container {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 25px;
 }
 
 .catalog__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
-    padding-bottom: 70px;
+  .catalog__container {
+    width: 708px;
+    margin: 0 auto;
+    padding-bottom: 60px;
   }
 
   .catalog__title {
@@ -27,6 +36,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__container {
+    width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
   .catalog__list {
     grid-template-columns: repeat(4, 245px);
     gap: 140px 80px;

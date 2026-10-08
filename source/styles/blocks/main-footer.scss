@@ -1,10 +1,15 @@
 .main-footer {
+  width: 100%;
+  background-color: $color-grey;
+}
+
+.main-footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f2f2;
-  padding: 40px 20px;
-  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .main-footer__list {
@@ -12,19 +17,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer {
+  .main-footer__container {
+    width: 708px;
+    padding: 60px 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 30px;
-    max-width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer {
-    max-width: 1440px;
-    padding: 60px 110px;
+  .main-footer__container {
+    width: 1220px;
+    padding: 60px 0;
   }
 }

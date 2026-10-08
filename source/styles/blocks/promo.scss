@@ -1,8 +1,17 @@
 .promo {
-  padding: 0 20px 40px;
+  width: 100%;
+  overflow-x: clip;
+}
+
+.promo__container {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .promo__title {
+  position: relative;
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -14,7 +23,11 @@
 
   &::after {
     content: "";
-    flex-grow: 1;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 20px;
+    width: 100vw;
     height: 2px;
     background-color: $color-green;
   }
@@ -31,17 +44,32 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo {
+  .promo__container {
     width: 708px;
-    margin: 0 auto 80px;
-    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 80px;
   }
 
   .promo__title {
     font-size: 36px;
     line-height: 36px;
-    gap: 35px;
     margin-bottom: 60px;
+    margin-left: 37px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-right: 37px;
+      width: 100vw;
+      height: 2px;
+      background-color: $color-green;
+    }
+
+    &::after {
+      margin-left: 37px;
+    }
   }
 
   .promo__description {
@@ -53,14 +81,23 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo {
+  .promo__container {
     width: 1220px;
-    margin: 0 auto 86px;
-    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 95px;
   }
 
   .promo__title {
+    margin-left: 0;
     margin-bottom: 60px;
+
+    &::before {
+      margin-right: 40px;
+    }
+
+    &::after {
+      margin-left: 40px;
+    }
   }
 
   .promo__description {
