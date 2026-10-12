@@ -1,5 +1,12 @@
 .example {
+  width: 100%;
   background-color: #eaeaea;
+}
+
+.example__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 27px 0 40px;
 }
 
 .example__title {
@@ -20,10 +27,22 @@
 
 .example__list {
   display: flex;
-  margin: 0;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 0 0 34px;
+  padding: 0;
+}
+
+.example__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .example__term {
@@ -33,8 +52,15 @@
 
 .example__definition {
   font-family: "Lato", "Arial", sans-serif;
+  position: absolute;
   font-size: 12px;
   color: $color-muted;
+  bottom: -7px;
+  margin: 0;
+  padding: 0 5px;
+  background-color: #eaeaea;
+  line-height: 12px;
+  text-align: center;
 }
 
 .example__expenses {
@@ -45,31 +71,102 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 620px, #eaeaea 620px);
+  }
+
+  .example__container {
+    width: 708px;
+    margin: 0 auto;
+    padding: 43px 0 65px;
+  }
+
   .example__title {
-    margin-left: 30px;
+    margin-bottom: 63px;
   }
 
 
   .example__text {
-    margin-left: 30px;
+    margin-bottom: 54px;
+  }
+
+  .example__stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
   }
 
   .example__list {
-    margin-left: 30px;
+    gap: 42px;
+    margin-bottom: 0;
+  }
+
+  .example__item {
+    width: 162px;
+    height: 72px;
+  }
+
+  .example__term {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__definition {
+    bottom: -6px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .example__title {
-    margin-left: 110px;
+  .example {
+    background-image: linear-gradient(to bottom, #ffffff 190px, #eaeaea 190px);
   }
 
+  .example__container {
+    display: grid;
+    grid-template-columns: 436px 560px;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 0 65px;
+    align-items: start;
+  }
+
+  .example__title {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin: 70px 0 75px;
+  }
 
   .example__text {
-    margin-left: 110px;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    margin-top: 70px;
+    margin-bottom: 69px;
+    max-width: 436px;
+    margin-left: 0;
+    line-height: 24px;
   }
 
   .example__list {
-    margin-left: 110px;
+    margin: 0;
+  }
+
+  .example__definition {
+    background-color: #eaeaea;
+  }
+
+  .example__stats {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55px;
+    margin: 0;
   }
 }

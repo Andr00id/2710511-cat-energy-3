@@ -1,1 +1,16 @@
-//возможно тут что то будет
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-footer {
+    width: auto;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
