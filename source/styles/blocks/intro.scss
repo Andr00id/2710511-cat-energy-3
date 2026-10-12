@@ -5,7 +5,7 @@
   background-color: #ffffff;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../../images/intro-background-cat@1x.jpg");
+    url("../../images/intro-background-cat-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto 302px;
@@ -136,7 +136,7 @@
     background-color: $color-green;
     background-image:
       linear-gradient(to right, $color-green 0%, $color-green 42%, rgba(104, 183, 56, 0.85) 65%, rgba(104, 183, 56, 0.85) 100%),
-      url("../../images/intro-background-cat@1x.jpg");
+      url("../../images/intro-background-cat-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0, right -300px top;
     background-size: 100% 100%, cover;

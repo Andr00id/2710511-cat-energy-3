@@ -86,11 +86,30 @@
 }
 
 .programs__link {
+  display: inline-flex;
+  align-items: center;
   line-height: 16px;
   background-color: transparent;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  gap: 15px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+    background-image: url("../../icons/stack.svg#icon-arrow");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+
+  &:hover::after {
+    width: 32px;
+    background-image: url("../../icons/stack.svg#icon-arrow-length");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -136,6 +155,16 @@
 
   .programs__link {
     font-size: 20px;
+    line-height: 30px;
+    gap: 25px;
+
+    &::after {
+      width: 24px;
+    }
+
+    &:hover::after {
+      width: 32px;
+    }
   }
 
   .programs__item--slim::after {
