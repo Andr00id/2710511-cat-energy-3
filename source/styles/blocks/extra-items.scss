@@ -19,7 +19,6 @@
   align-items: center;
   gap: 20px;
   color: $color-secondary;
-  text-transform: uppercase;
   margin: 0 0 35px;
 
   &::after {
@@ -102,6 +101,10 @@
     min-height: 200px;
     padding: 60px 125px 60px 0;
     text-align: left;
+    background-image:
+      url("../../icons/stack.svg#icon-gift"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog-background-cat-tablet@1x.jpg");
     background-position: left 77px center, 0 0, center;
     background-size: 80px 83px, 100% 100%, cover;
 
@@ -125,6 +128,8 @@
     grid-column: 1 / -1;
     margin-left: 0;
     margin-bottom: 80px;
+    font-size: 40px;
+    line-height: 40px;
 
     &::before {
       margin-right: 40px;
