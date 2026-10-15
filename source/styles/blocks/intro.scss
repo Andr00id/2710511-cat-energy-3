@@ -29,7 +29,7 @@
 
 .intro__title {
   order: 1;
-  margin: 0 0 14px;
+  margin: 0 0 25px;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -40,7 +40,7 @@
 
 .intro__text {
   order: 2;
-  margin: 0 0 20px;
+  margin: 0 0 29px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -82,7 +82,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 87px;
+    padding-left: 90px;
+    padding-top: 5px;
   }
 
   .intro__title {
@@ -103,7 +104,10 @@
 
   .intro__link {
     order: initial;
-    width: 244px;
+    width: 242px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
     margin-bottom: 0;
     z-index: 2;
   }
@@ -120,38 +124,22 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-top: -120px;
-    padding-top: 120px;
-    background: transparent;
-    background-image: none;
-  }
-
-  .intro::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: $color-green;
-    background-image:
-      linear-gradient(to right, $color-green 0%, $color-green 42%, rgba(104, 183, 56, 0.85) 65%, rgba(104, 183, 56, 0.85) 100%),
-      url("../../images/intro-background-cat-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0, right -300px top;
-    background-size: 100% 100%, cover;
+    position: relative;
     z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
   }
 
   .intro__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
     position: relative;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 35px 110px 0;
     z-index: 2;
+    max-width: 1440px;
+    padding: 30px 110px 80px;
+    align-items: start;
   }
 
   .intro__content {
@@ -159,7 +147,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 0;
+    padding: 0;
+    margin-top: 50px;
+    margin-left: 80px;
   }
 
   .intro__title {
@@ -167,11 +157,11 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    width: 500px;
   }
 
   .intro__link {
     width: 244px;
-    margin-bottom: 60px;
   }
 
   .intro__text {
@@ -179,15 +169,17 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    width: 500px;
   }
 
   .intro__picture {
     grid-column: 2 / 3;
     justify-self: start;
     margin: 0;
-    margin-left: -210px;
-    margin-top: -10px;
-    z-index: 3;
+    margin-left: -163px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 4;
   }
 
   .intro__image {

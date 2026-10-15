@@ -101,16 +101,16 @@
   .slider {
     width: 560px;
     height: 512px;
+    left: 74px;
+    top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
     grid-column: 2 / 3;
-    grid-row: 1 / span 3;
+    grid-row: 1 / 4;
     width: 560px;
-    height: 512px;
     margin: 0;
-    margin-top: -15px;
   }
 }

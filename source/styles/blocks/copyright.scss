@@ -3,19 +3,37 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 22px;
+  padding-top: 20px;
   text-decoration: none;
+  outline: none;
   cursor: pointer;
 
   &::after {
     content: "";
     display: block;
-    background-color: #666666;
     width: 27px;
     height: 34px;
+    background-color: #666666;
     mask-image: url("../../icons/stack.svg#html-logo");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    background-color: $color-green;
   }
 }
+
 
 .copyright__text {
   font-family: "Lato", "Arial", sans-serif;

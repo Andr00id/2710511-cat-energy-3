@@ -10,11 +10,10 @@
 }
 
 .example__title {
-  font-size: 36px;
-  line-height: 40px;
   font-weight: 400;
   margin: 0;
-  margin-left: 20px;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .example__text {
@@ -22,7 +21,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-muted;
-  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .example__list {
@@ -35,32 +35,38 @@
 
 .example__item {
   position: relative;
-  box-sizing: border-box;
-  width: 124px;
-  height: 56px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 14px 10px 18px;
 }
 
 .example__term {
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .example__definition {
   font-family: "Lato", "Arial", sans-serif;
   position: absolute;
   font-size: 12px;
+  bottom: 0;
   color: $color-muted;
-  bottom: -7px;
-  margin: 0;
-  padding: 0 5px;
   background-color: #eaeaea;
   line-height: 12px;
   text-align: center;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin: 0;
+  padding: 0 5px;
+  max-width: 90px;
 }
 
 .example__expenses {
@@ -73,29 +79,34 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: #ffffff;
-    background-image: linear-gradient(to bottom, #ffffff 550px, #eaeaea 550px);
+    background-image: linear-gradient(to bottom, #ffffff 620px, #eaeaea 620px);
   }
 
   .example__container {
     width: 708px;
     margin: 0 auto;
-    padding: 43px 0 65px;
+    padding: 45px 0 101px;
   }
 
   .example__title {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
 
   .example__text {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
   }
 
   .example__stats {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 99px;
   }
 
   .example__list {
@@ -105,7 +116,7 @@
 
   .example__item {
     width: 162px;
-    height: 72px;
+    min-height: 72px;
   }
 
   .example__term {
@@ -114,10 +125,12 @@
   }
 
   .example__definition {
-    bottom: -6px;
     background-color: #ffffff;
     font-size: 14px;
     line-height: 14px;
+    padding: 0 8px;
+    max-width: none;
+    white-space: nowrap;
   }
 
   .example__expenses {
@@ -128,12 +141,14 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+    margin: 0;
+    margin-top: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image: linear-gradient(to bottom, #ffffff 120px, #eaeaea 120px);
+    background-image: linear-gradient(to bottom, #ffffff 200px, #eaeaea 200px);
   }
 
   .example__container {
@@ -142,7 +157,7 @@
     justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
-    padding: 0 0 65px;
+    padding: 60px 0 65px;
     align-items: start;
   }
 
@@ -156,7 +171,7 @@
   .example__text {
     grid-column: 1 / 2;
     grid-row: 2;
-    margin-top: 70px;
+    margin-top: 90px;
     margin-bottom: 69px;
     max-width: 436px;
     margin-left: 0;
