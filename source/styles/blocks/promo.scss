@@ -51,10 +51,10 @@
   }
 
   .promo__title {
-    font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 60px;
-    margin-left: 37px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 69px;
+    margin-left: 40px;
 
     &::before {
       content: "";
@@ -73,8 +73,8 @@
   }
 
   .promo__description {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 32px;
     max-width: 632px;
     margin-bottom: 24px;
   }
@@ -84,12 +84,14 @@
   .promo__container {
     width: 1220px;
     margin: 0 auto;
-    padding-bottom: 95px;
+    padding-bottom: 104px;
   }
 
   .promo__title {
     margin-left: 0;
-    margin-bottom: 60px;
+    margin-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
 
     &::before {
       margin-right: 40px;

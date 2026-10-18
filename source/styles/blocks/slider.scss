@@ -57,15 +57,43 @@
   }
 
   &::after {
-    content: "◀ ▶";
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 8px;
-    letter-spacing: 2px;
-    color: #666666;
-    white-space: nowrap;
+    width: 24px;
+    height: 18px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#slider-arrow");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+
+  &:hover {
+    background-color: $color-green;
+
+    &::before {
+      border-color: $color-green;
+    }
+
+    &::after {
+      background-color: $color-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+    background-color: $color-green;
+
+    &::before {
+      border-color: $color-green;
+    }
+
+    &::after {
+      background-color: $color-green;
+    }
   }
 }
 
@@ -73,16 +101,18 @@
   .slider {
     width: 560px;
     height: 512px;
+    left: 74px;
+    top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
     grid-column: 2 / 3;
-    grid-row: 1 / span 3;
+    grid-row: 1 / 4;
     width: 560px;
-    height: 512px;
     margin: 0;
-    margin-top: -15px;
+    left: 0;
+    top: 0;
   }
 }

@@ -6,7 +6,7 @@
 .extra-items__container {
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .extra-items__title {
@@ -19,7 +19,6 @@
   align-items: center;
   gap: 20px;
   color: $color-secondary;
-  text-transform: uppercase;
   margin: 0 0 35px;
 
   &::after {
@@ -64,14 +63,14 @@
   .extra-items__container {
     width: 708px;
     margin: 0 auto;
-    padding-bottom: 70px;
+    padding-bottom: 78px;
   }
 
   .extra-items__title {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 32px;
     margin-bottom: 80px;
-    margin-left: 37px;
+    margin-left: 40px;
 
     &::before {
       content: "";
@@ -92,7 +91,7 @@
   .extra-items__list {
     border: 1px solid #cdcdcd;
     border-bottom: none;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .extra-items__text {
@@ -102,6 +101,10 @@
     min-height: 200px;
     padding: 60px 125px 60px 0;
     text-align: left;
+    background-image:
+      url("../../icons/stack.svg#icon-gift"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog-background-cat-tablet@1x.jpg");
     background-position: left 77px center, 0 0, center;
     background-size: 80px 83px, 100% 100%, cover;
 
@@ -113,18 +116,21 @@
 
 @media (min-width: $desktop-width) {
   .extra-items__container {
-    width: 1220px;
-    margin: 0 auto;
-    padding-bottom: 85px;
     display: grid;
     grid-template-columns: 895px 245px;
+    margin: 0 auto;
+    padding-bottom: 95px;
+    width: 1220px;
     gap: 0 80px;
+    align-items: start;
   }
 
   .extra-items__title {
     grid-column: 1 / -1;
     margin-left: 0;
     margin-bottom: 80px;
+    font-size: 40px;
+    line-height: 40px;
 
     &::before {
       margin-right: 40px;
@@ -137,15 +143,20 @@
 
   .extra-items__list {
     border: none;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .extra-items__text {
     display: block;
     width: 245px;
-    min-height: 289px;
+    min-height: 288px;
     padding: 185px 40px 42px;
     text-align: center;
+    background-image:
+      url("../../icons/stack.svg#icon-gift"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog-background-cat@1x.jpg");
     background-position: center 55px, 0 0, center;
     background-size: 80px 83px, 100% 100%, cover;
   }
