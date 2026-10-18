@@ -16,7 +16,7 @@
 
 .programs__item {
   position: relative;
-  background-color: #f2f2f2;
+  background-color: $color-grey;
   padding: 22px 20px 18px;
   margin-left: auto;
   margin-right: auto;
@@ -141,8 +141,8 @@
     &::before {
       width: 200px;
       height: 200px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 92px;
+      transform: none;
       left: auto;
       right: 62px;
     }
@@ -156,6 +156,7 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 24px;
+    max-width: 340px;
   }
 
   .programs__text {
@@ -175,6 +176,7 @@
     line-height: 30px;
     gap: 25px;
     margin-top: 0;
+    max-width: 340px;
 
     &::before {
       display: none;
@@ -182,6 +184,7 @@
 
     &::after {
       width: 24px;
+      flex-shrink: 0;
     }
 
     &:hover::after {
@@ -201,8 +204,8 @@
   .programs__item--pro::after {
     left: auto;
     right: 28px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 136px;
+    transform: none;
     width: 268px;
     height: 112px;
     background-size: contain;
@@ -220,7 +223,7 @@
     grid-template-columns: 570px 570px;
     gap: 80px;
     width: 1220px;
-    margin: 50px auto;
+    margin: 52px auto 50px;
   }
 
   .programs__item {
@@ -248,7 +251,7 @@
   .programs__text {
     max-width: 460px;
     margin-top: 73px;
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 
   .programs__item--slim::after {

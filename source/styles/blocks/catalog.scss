@@ -9,6 +9,10 @@
 }
 
 .catalog__list {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-auto-rows: 209px;
+  gap: 0;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -19,7 +23,7 @@
   .catalog__container {
     width: 708px;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding-bottom: 75px;
   }
 
   .catalog__title {
@@ -32,8 +36,8 @@
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 140px 60px;
-    padding-top: 80px;
+    grid-auto-rows: auto;
+    gap: 60px 60px;
   }
 }
 
@@ -41,7 +45,7 @@
   .catalog__container {
     width: 1220px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
   }
 
   .catalog__title {
@@ -50,7 +54,6 @@
 
   .catalog__list {
     grid-template-columns: repeat(4, 245px);
-    gap: 140px 80px;
-    padding-top: 80px;
+    gap: 63px 80px;
   }
 }

@@ -18,6 +18,7 @@
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: contain;
+    flex-shrink: 0;
   }
 
   &:hover::after,
@@ -48,5 +49,6 @@
     width: auto;
     padding-top: 0;
     gap: 22px;
+    justify-self: end;
   }
 }

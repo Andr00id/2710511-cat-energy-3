@@ -82,6 +82,20 @@
   z-index: 2;
 }
 
+.nav--nojs {
+  width: 100%;
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .nav__toggle {
     display: none;

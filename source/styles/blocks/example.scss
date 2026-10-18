@@ -6,7 +6,7 @@
 .example__container {
   width: 280px;
   margin: 0 auto;
-  padding: 27px 0 40px;
+  padding: 25px 0 40px;
 }
 
 .example__title {
@@ -29,7 +29,7 @@
   display: flex;
   justify-content: space-between;
   gap: 32px;
-  margin: 0 0 34px;
+  margin: 0 0 19px;
   padding: 0;
 }
 
@@ -40,33 +40,31 @@
   justify-content: center;
   width: 124px;
   min-height: 56px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-  padding: 14px 10px 18px;
+  flex-direction: column;
 }
 
 .example__term {
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  padding: 0;
+  padding: 14px 10px 18px;
+  width: 100%;
   margin: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 
 .example__definition {
   font-family: "Lato", "Arial", sans-serif;
-  position: absolute;
   font-size: 12px;
-  bottom: 0;
   color: $color-muted;
   background-color: #eaeaea;
   line-height: 12px;
   text-align: center;
-  left: 50%;
-  transform: translate(-50%, 50%);
   margin: 0;
   padding: 0 5px;
   max-width: 90px;
+  margin-top: -11px;
 }
 
 .example__expenses {
@@ -74,6 +72,8 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,7 +85,7 @@
   .example__container {
     width: 708px;
     margin: 0 auto;
-    padding: 45px 0 101px;
+    padding: 45px 0 105px;
   }
 
   .example__title {
@@ -106,7 +106,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 99px;
+    margin-bottom: 95px;
   }
 
   .example__list {
@@ -129,8 +129,8 @@
     font-size: 14px;
     line-height: 14px;
     padding: 0 8px;
-    max-width: none;
-    white-space: nowrap;
+    max-width: 145px;
+    margin-top: -8px;
   }
 
   .example__expenses {
@@ -140,15 +140,14 @@
     max-width: 180px;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 10px;
     margin: 0;
-    margin-top: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image: linear-gradient(to bottom, #ffffff 200px, #eaeaea 200px);
+    background-image: linear-gradient(to bottom, #ffffff 193px, #eaeaea 193px);
   }
 
   .example__container {
@@ -157,7 +156,7 @@
     justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
-    padding: 60px 0 65px;
+    padding: 57px 0 75px;
     align-items: start;
   }
 
@@ -171,9 +170,9 @@
   .example__text {
     grid-column: 1 / 2;
     grid-row: 2;
-    margin-top: 90px;
+    margin-top: 85px;
     margin-bottom: 69px;
-    max-width: 436px;
+    max-width: 434px;
     margin-left: 0;
     line-height: 24px;
   }
@@ -209,14 +208,12 @@
     & span:first-child {
       flex-grow: 1;
       text-align: left;
-      white-space: nowrap;
     }
 
     & span:last-child {
       width: 162px;
       flex-shrink: 0;
       text-align: center;
-      white-space: nowrap;
     }
   }
 }
